@@ -5,7 +5,7 @@ if number >= 0:
     lastDigit = number % 10
 else:
     lastDigit = ((number * -1) % 10) * -1
-    
+
 str1 = 'Last digit of {:d} is {:d} '
 if lastDigit > 5:
     str1 = str1 + 'and is greater than 5'
