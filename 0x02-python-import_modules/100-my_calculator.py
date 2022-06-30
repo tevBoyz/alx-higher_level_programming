@@ -23,6 +23,7 @@ if __name__ == "__main__":
         elif op == '-':
             print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
         elif op == '*':
-            print("{:d} '*' {:d} = {:d}".format(a, b, mul(a, b)))
+            print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
         else:
             print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+        exit(0)
