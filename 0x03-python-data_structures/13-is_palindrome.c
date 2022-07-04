@@ -12,14 +12,14 @@ size_t list_len(listint_t *h)
 size_t nodes = 0;
 
 if (h == NULL)
-return(0);
+return (0);
 
 while (h != NULL)
 {
-nodes ++;
+nodes++;
 h = h->next;
 }
-return(nodes);
+return (nodes);
 }
 
 /**
@@ -52,7 +52,7 @@ j++;
 temp = temp->next;
 }
 
-for (i = 0, j = length- 1; i < j; i++, j--)
+for (i = 0, j = length - 1; i < j; i++, j--)
 {
 if (arr[i] != arr[j])
 return (0);
