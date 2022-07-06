@@ -6,6 +6,8 @@ def getInt(c):
 
 
 def roman_to_int(roman_string):
+    if roman_string is None:
+        return 0;
     pre = 0
     sum = 0
     rev = reversed(roman_string)
