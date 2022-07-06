@@ -6,7 +6,7 @@ def getInt(c):
 
 
 def roman_to_int(roman_string):
-    if not isinstance(roman_string,str):
+    if not isinstance(roman_string, str):
         return 0
     pre = 0
     summ = 0
@@ -22,4 +22,4 @@ def roman_to_int(roman_string):
             else:
                 summ += cur
         pre = cur
-    return sum
+    return summ
