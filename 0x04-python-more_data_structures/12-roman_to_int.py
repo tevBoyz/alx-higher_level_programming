@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def getInt(c):
-    rom = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    return rom[c]
+    rom = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
+    val = [1, 5, 10, 50, 100, 500, 1000]
+    
+    return val[rom.index(c)]
 
 
 def roman_to_int(roman_string):
