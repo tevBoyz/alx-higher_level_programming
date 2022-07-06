@@ -22,12 +22,12 @@ return;
 
 size = ((PyVarObject *)p)->ob_size;
 str = ((PyBytesObject *)p)->ob_sval;
-len = size + 1 > 10 : size + 1;
+len = size + 1 > 12 : size + 1;
 printf(" size: %lu\n", size);
-printf(" trying string: %s\n", str);
+printf(" trying strng: %s\n", str);
 printf(" first %lu byters: ", len);
 for (i = 0; i < len; i++)
-printf("%02hhx%s", str[i], i + 1 < len ? " " : "");
+printf("%02hhx%s", str[i], i < len ? " " : "");
 
 printf("\n");
 }
