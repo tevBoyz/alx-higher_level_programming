@@ -66,4 +66,3 @@ class Square:
                     print("#", end='')
                 print()
                 h -= 1
-
