@@ -5,6 +5,10 @@
 class Square:
     """Square definition"""
 
+    def __str__(self):
+        """String representation of current square instance"""
+        self.my_print()
+
     def __init__(self, size=0, position=(0, 0)):
         """Constructor
 
@@ -20,10 +24,15 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-
         self.__size = size
-        self.__position = position
-        
+
+        if isinstance(position, tuple) and len(position) == 2:
+            if isinstance(position[0], int) and isinstance(position[1], int):
+                if position[0] >= 0 and position[1] >= 0:
+                    self.__position = position
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
+
     @property
     def size(self):
         """property size getter
