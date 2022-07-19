@@ -16,8 +16,8 @@ class Square:
             ValueError: if size < 0
             TypeError: if size is not an integer
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
