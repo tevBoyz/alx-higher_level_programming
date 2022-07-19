@@ -4,7 +4,7 @@
 
 class Square:
     """Square definition"""
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """Constructor
 
@@ -21,14 +21,13 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-        
+
         if isinstance(position, tuple) and len(position) == 2:
             if isinstance(position[0], int) and isinstance(position[1], int):
                 if position[0] >= 0 and position[1] >= 0:
                     self.__position = position
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
-
 
     @property
     def size(self):
@@ -97,4 +96,5 @@ class Square:
             for i in range(self.__position[1]):
                 print()
             for j in range(self.__size):
-                print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+                print("{}{}".format(" " * self.__position[0],
+                                    "#" * self.__size))
