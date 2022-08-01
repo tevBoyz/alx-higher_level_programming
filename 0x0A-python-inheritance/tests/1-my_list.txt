@@ -1,8 +1,8 @@
 0t.txt module
-=============
+====================
 
-Importing the class from module:
->>> MyList = __import__("1-mylist").MyList
+Importing the class from the module:
+>>> MyList = __import__("1-my_list").MyList
 
 Checking for module docstring:
 >>> m = __import__("1-my_list").__doc__
@@ -15,9 +15,9 @@ Checking for class docstring:
 True
 
 Checking for method docstring
-	>>> f = __import__("1-my_list").MyList.print_sorted.__doc__
-	>>> len(f) > 1
-	True
+        >>> f = __import__("1-my_list").MyList.print_sorted.__doc__
+        >>> len(f) > 1
+        True
 
 Checking given test case
 >>> my_list = MyList()
@@ -72,7 +72,7 @@ Checking NULL object
 
 >>> obj3.append(NULL)
 Traceback (most recent call last):
-	...
+    ...
 NameError: name 'NULL' is not defined
 
 >>> print(obj3)
@@ -85,9 +85,9 @@ Checking NaN object
 >>> obj4 = MyList()
 
 >>> obj4.append(NaN)
-Traceback (most recent call last)
-	...
-NameError: name 'NaN is not defined
+Traceback (most recent call last):
+    ...
+NameError: name 'NaN' is not defined
 
 >>> print(obj4)
 []
