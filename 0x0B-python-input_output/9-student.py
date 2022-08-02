@@ -5,7 +5,6 @@
 class Student:
     """module class student"""
 
-
     def __init__(self, first_name, last_name, age):
         """constructor"""
         self.first_name = first_name
